@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <title>Moodboard Generator</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Moodboard Generator</h1>
+            <p class="subtitle">Type a vibe</p>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <form id="moodboard-generator">
+                    <input type="text" 
+                    placeholder="Enter a vibe (i.e. quiet luxury)"
+                    autofocus
+                    required
+                    autocomplete="off"
+                    class="instructions"
+                    id="user-instructions"
+                    />
+                    <input type="submit" class="submit-button" />
+                </form>
+                <div class="hint">
+                    Try: quiet luxury, coastal calm, retro arcade, techy noir...
+                </div>
+            </div>
+            <div class="results hidden" id="moodboard-results">
+
+            </div>
+        </main>
+            <footer>
+                This AI project was coded by 
+            <a href="https://www.bayleighmartin.com" target="_blank">
+                Bayleigh Martin
+            </a> 
+            and is
+        <a href="https://github.com/smartinnni/AI-Mood-board" target="_blank" > 
+            open-sourced on GitHub 
+
+        </a>   
+        and is 
+        <a href="" target="_blank">
+            hosted on Netlify </a>
+        </footer>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
